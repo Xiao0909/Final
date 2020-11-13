@@ -1,0 +1,28 @@
+/*default*/
+.top{
+	background-color: #0081A7;
+	height: 250px;
+	font-family: Monaco, monaspace;
+	margin-bottom: 50px;
+	color: #FED9B7;
+}
+h1{
+	padding-top: 95px;
+    padding-left: 95px;
+    margin-left: 200px;
+  }
+  .container{
+      background-color: #FDFCDC;
+      color: #F07167;
+  }
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  canvas {
+    display: block;
+    padding-top: 120px;
+  }
