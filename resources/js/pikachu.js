@@ -160,6 +160,15 @@ function Start () {
     highscore = sessionStorage.getItem('highscore');
   }
 
+//set the button related with the high score
+
+// if(highscore < 100){
+//   document.getElementById("next").style.display = "none";
+// }
+if(highscore >= 100){
+  document.getElementById("next").style.display = "block";
+}
+
   player = new Player(25, 0, 50, 50, '#FF5858');
 
   scoreText = new Text("Score: " + score, 25, 25, "left", "#212121", "20");
