@@ -65,6 +65,8 @@ linkdiv.style.display = "none";
 
     const grid = document.querySelector('.grid')
     const resultDisplay = document.querySelector('#result')
+    // These should be lets not var. const over let over var
+    // var is older syntax
     var cardsChosen = []
     var cardsChosenId = []
     var cardsWon = []

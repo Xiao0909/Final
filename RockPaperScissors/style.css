@@ -85,6 +85,8 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* I think adding this makes it a little cleaner */
+  gap: 5px;
 }
 
 .player-hand {

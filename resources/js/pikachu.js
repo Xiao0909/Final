@@ -147,7 +147,7 @@ function RandomIntInRange (min, max) {
 }
 
 function Start () {
-  canvas.width = window.innerWidth;
+  canvas.width = document.documentElement.clientWidth;
   canvas.height = 500;
 
 
