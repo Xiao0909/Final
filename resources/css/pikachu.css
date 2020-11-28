@@ -3,7 +3,7 @@
 	background-color: #0081A7;
 	height: 250px;
 	font-family: Monaco, monaspace;
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 	color: #FED9B7;
 }
 h1{
@@ -24,5 +24,14 @@ h1{
   }
   canvas {
     display: block;
-    padding-top: 120px;
+    padding-top: 10px;
   }
+
+  a:visited{
+    color: white;
+}
+
+a:hover{
+  color:pink;
+}
+    

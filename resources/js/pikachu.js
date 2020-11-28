@@ -1,6 +1,7 @@
 const canvas = document.getElementById('game');
 const ctx = canvas.getContext('2d');
-
+const linkdiv = document.getElementById("link");
+linkdiv.style.display = "none";
 // Variables
 let score;
 let scoreText;
@@ -132,6 +133,7 @@ function SpawnObstacle () {
   let size = RandomIntInRange(20, 70);
   let type = RandomIntInRange(0, 1);
   let obstacle = new Obstacle(canvas.width + size, canvas.height - size, size, size, '#2484E4');
+  
 
   if (type == 1) {
     obstacle.y -= player.originalHeight - 10;
@@ -158,22 +160,19 @@ function Start () {
   highscore = 0;
   if (sessionStorage.getItem('highscore')) {
     highscore = sessionStorage.getItem('highscore');
+   
   }
 
 //set the button related with the high score
 
-// if(highscore < 100){
-//   document.getElementById("next").style.display = "none";
-// }
-if(highscore >= 100){
-  document.getElementById("next").style.display = "block";
-}
+
+
 
   player = new Player(25, 0, 50, 50, '#FF5858');
 
   scoreText = new Text("Score: " + score, 25, 25, "left", "#212121", "20");
   highscoreText = new Text("Highscore: " + highscore, canvas.width - 25, 25, "right", "#212121", "20");
-
+ 
   requestAnimationFrame(Update);
 }
 
@@ -227,6 +226,10 @@ function Update () {
   if (score > highscore) {
     highscore = score;
     highscoreText.t = "Highscore: " + highscore;
+  }
+
+  if (score > 2000){
+    linkdiv.style.display = "block";
   }
   
   highscoreText.Draw();

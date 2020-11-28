@@ -24,9 +24,9 @@ td {
 table {
 	border-collapse: collapse;
 
-	right:70%;
+	left:50%;
+	margin-left: 40%;
 
-	top: 50px;
 }
 
 table tr:first-child td {
@@ -59,4 +59,9 @@ table tr td:last-child {
   border-radius: 5px;
   color: #F07167;
   font-size: 2em;
+}
+
+.replay{
+	margin-left: 48%;
+    width: 150px;
 }

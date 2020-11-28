@@ -25,3 +25,13 @@ h1{
       background-color: #FDFCDC;
       color: #F07167;
   }
+
+  a:visited{
+      color: white;
+  }
+
+  a:hover{
+    color:pink;
+  }
+      
+  

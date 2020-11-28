@@ -1,5 +1,7 @@
+//document.getElementById("next").style.display="none"
 document.addEventListener('DOMContentLoaded', () =>{
-
+var linkdiv = document.getElementById("link");
+linkdiv.style.display = "none";
     //card options
     const cardArray = [
         //波克比
@@ -95,7 +97,9 @@ document.addEventListener('DOMContentLoaded', () =>{
         cardsChosenId = []
         resultDisplay.textContent = cardsWon.length
         if(cardsWon.length === cardArray.length/2){
-            resultDisplay.textContent = 'Congradulations! you found them all!'
+            // resultDisplay.textContent = 'Congradulations! you found them all!';
+            //alert("yes")
+            linkdiv.style.display = "block";
         }
     }
    
@@ -109,6 +113,8 @@ document.addEventListener('DOMContentLoaded', () =>{
             setTimeout(checkForMatch, 500)
         }
     }
+    
+    
 
     createBoard()
 })
