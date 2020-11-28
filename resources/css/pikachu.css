@@ -7,9 +7,11 @@
 	color: #FED9B7;
 }
 h1{
-	padding-top: 95px;
-    padding-left: 95px;
-    margin-left: 200px;
+  padding-top: 95px;
+  text-align: center;
+  /* You're trying too hard to 'center' this */
+    /* padding-left: 95px; */
+    /* margin-left: 200px; */
   }
   .container{
       background-color: #FDFCDC;

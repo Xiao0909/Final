@@ -77,6 +77,7 @@ const game = () => {
       return;
     }
 
+    // This isn't DRY (Don't Repeat Yourself) code. There's a lot of repeat code. I'd have a handleWin and handleLoss function makes it easier to maintain.
     if (playerChoice === "rock") {
       if (computerChoice === "scissors") {
         winner.textContent = "Player Wins";
