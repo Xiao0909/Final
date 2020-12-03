@@ -38,13 +38,13 @@ class Player {
 
   Animate () {
     // Jump
-    if (keys['Space'] || keys['KeyW']) {
+    if (keys['Space']) {
       this.Jump();
     } else {
       this.jumpTimer = 0;
     }
 
-    if (keys['ShiftLeft'] || keys['KeyS']) {
+    if (keys['ShiftLeft']) {
       this.h = this.originalHeight / 2;
     } else {
       this.h = this.originalHeight;
@@ -130,9 +130,11 @@ class Text {
 
 // Game Functions
 function SpawnObstacle () {
+  let image = new Image();
+  image.src = "/images/background.png";
   let size = RandomIntInRange(20, 70);
   let type = RandomIntInRange(0, 1);
-  let obstacle = new Obstacle(canvas.width + size, canvas.height - size, size, size, '#2484E4');
+  let obstacle = new Obstacle(canvas.width + size, canvas.height - size, size, size,"#F07167" );
   
 
   if (type == 1) {
@@ -168,7 +170,7 @@ function Start () {
 
 
 
-  player = new Player(25, 0, 50, 50, '#FF5858');
+  player = new Player(25, 0, 50, 50, '#00AFB9');
 
   scoreText = new Text("Score: " + score, 25, 25, "left", "#212121", "20");
   highscoreText = new Text("Highscore: " + highscore, canvas.width - 25, 25, "right", "#212121", "20");

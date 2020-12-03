@@ -1,6 +1,6 @@
 //document.getElementById("next").style.display="none"
 document.addEventListener('DOMContentLoaded', () =>{
-var linkdiv = document.getElementById("link");
+const linkdiv = document.getElementById("link");
 linkdiv.style.display = "none";
     //card options
     const cardArray = [
@@ -65,14 +65,14 @@ linkdiv.style.display = "none";
 
     const grid = document.querySelector('.grid')
     const resultDisplay = document.querySelector('#result')
-    var cardsChosen = []
-    var cardsChosenId = []
-    var cardsWon = []
+    const cardsChosen = []
+    const cardsChosenId = []
+    const cardsWon = []
 
     //create your board
     function createBoard(){
         for(let i=0; i< cardArray.length; i++){
-            var card = document.createElement('img')
+            const card = document.createElement('img')
             card.setAttribute('src', 'images/background.png')
             card.setAttribute('data-id',i)
             card.addEventListener('click', flipCard)
@@ -82,12 +82,14 @@ linkdiv.style.display = "none";
 
     //check for matches
     function checkForMatch(){
-        var cards = document.querySelectorAll('img')
+        const cards = document.querySelectorAll('img')
         const optionOneId = cardsChosenId[0]
         const optionTwoId = cardsChosenId[1]
+        cards[optionOneId].style.visibility = "visible";
+        cards[optionTwoId].style.visibility = "visible";
         if (cardsChosen[0] === cardsChosen[1]){
-            cards[optionOneId].setAttribute('src', 'images/white.jpg')
-            cards[optionTwoId].setAttribute('src', 'images/white.jpg')
+            cards[optionOneId].style.visibility = "hidden";
+            cards[optionTwoId].style.visibility = "hidden";
             cardsWon.push(cardsChosen)
         }else{
             cards[optionOneId].setAttribute('src', 'images/background.png')
@@ -105,7 +107,7 @@ linkdiv.style.display = "none";
    
     //flip your card
     function flipCard(){
-        var cardId = this.getAttribute('data-id')
+        const cardId = this.getAttribute('data-id')
         cardsChosen.push(cardArray[cardId].name)
         cardsChosenId.push(cardId)
         this.setAttribute('src', cardArray[cardId].img)

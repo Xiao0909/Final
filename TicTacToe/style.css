@@ -6,9 +6,7 @@
 	color: #FED9B7;
 }
 h1{
-	padding-top: 95px;
-    padding-left: 95px;
-    margin-left: 200px;
+	padding-top: 12%;
   }
 td {
 	border:  2px solid #333;
@@ -62,6 +60,18 @@ table tr td:last-child {
 }
 
 .replay{
-	margin-left: 48%;
+	margin-left: 44%;
     width: 150px;
+}
+
+button{
+	color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+.link:hover{
+  color:pink;
 }

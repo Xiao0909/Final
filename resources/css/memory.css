@@ -17,9 +17,7 @@ h3, span{
 	color: #FED9B7;
 }
 h1{
-	padding-top: 95px;
-    padding-left: 95px;
-    margin-left: 200px;
+	padding-top: 12%;
   }
   .container{
       background-color: #FDFCDC;
@@ -32,6 +30,10 @@ h1{
 
   a:hover{
     color:pink;
+  }
+
+  .imgwall{
+      text-align: center;
   }
       
   

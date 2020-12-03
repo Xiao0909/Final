@@ -10,11 +10,8 @@
   color: #FED9B7;
 }
 h1{
-    padding-top: 95px;
-    padding-left: 95px;
-    margin-left: 200px;
+	padding-top: 12%;
   }
-
   .h2, h2 {
     font-size: 4rem;
 }
@@ -165,7 +162,8 @@ a:visited{
   color: white;
 }
 
-a:hover{
-color:pink;
+.link:hover{
+  color:pink;
 }
+  
   
