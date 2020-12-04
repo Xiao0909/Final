@@ -24,12 +24,12 @@ h1{
       color: #F07167;
   }
 
-  a:visited{
+  .link{
       color: white;
   }
 
-  a:hover{
-    color:pink;
+  .link:hover{
+    color: pink;
   }
 
   .imgwall{

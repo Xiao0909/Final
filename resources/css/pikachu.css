@@ -28,12 +28,10 @@
   canvas {
     display: block;
     padding-top: 10px;
-    background-image: url('/images/crayon.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
+   
   }
 
-  a:visited{
+.link{
     color: white;
 }
 
